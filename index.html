@@ -16,7 +16,7 @@
 
 <body class="bg-very-dark-blue">
     <div class="rating-component bg-dark-blue text-white" id="component">
-        <div class="rating-screen-container" id="ratingScreenContainer">
+        <div class="hidden rating-screen-container" id="ratingScreenContainer">
             <div class="round-btn star-img bg-round-btn">
                 <img class="centered" src="./assets/icon-star.svg" alt="">
             </div>
@@ -47,6 +47,25 @@
                 </p>
             </div>
         </div>
+
+        <div class="thanks-screen-container" id="thanksScreenContainer">
+            <div class="thanks-img-container">
+                <img src="assets/illustration-thank-you.svg" class="thanks-img" alt="">
+                <div class="subtitle text-center bg-round-btn subtitle-round-bg" id="thanksSubtitle">
+                    You didn't vote
+                </div>
+            </div>
+            <div class="thanks-text">
+                <h1 class="header text-center">
+                    Thank you!
+                </h1>
+                <p class="text text-center text-light-gray">
+                    We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!
+                </p>
+            </div>
+        </div>
+    </div>
 
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400;700&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
