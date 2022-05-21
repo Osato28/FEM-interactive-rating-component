@@ -1,0 +1,177 @@
+h1 {
+    font-size: unset;
+    font-weight: unset;
+    margin: unset;
+    padding: unset;
+}
+
+p {
+    margin: unset;
+    padding: unset;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: .1em;
+}
+
+.rating-component {
+    display:block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 270px;
+    max-width: 415px;
+    border-radius: 20px;
+    /* padding: 35px; */
+}
+
+.rating-screen-container {
+    margin:35px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 24px;
+}
+
+.header {
+    font-size: 27px;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+}
+
+.rating-text {
+    margin-top: 38px;
+}
+
+.rating-text > .text {
+    margin: 15px 0px 15px 0px;
+}
+
+.subtitle-round-bg {
+    display:block;
+    width: fit-content;
+    padding: 8px 10px 5px 10px;
+    border-radius: 50px;
+    margin: 30px auto 40px auto;
+}
+
+.star-img {
+    display:flex;
+    height:50px;
+    width:50px;
+    border-radius: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.thanks-img {
+    display:block;
+    margin:auto;
+}
+
+.rating-buttons {
+    display:flex;
+    justify-content:space-between;
+    margin: 30px 0px 30px 0px;
+}
+
+.rating-btn {
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    height:50px;
+    width:50px;
+    border-radius: 100%;
+    font-size: 16px;
+}
+
+.rating-btn.btn-selected {
+    background-color: hsl(216,12%,54%);
+    color: hsl(0,0%,100%);
+}
+
+.rating-btn:hover {
+    background-color: hsl(26,97%,53%);
+    color: hsl(0,0%,100%);
+}
+
+.submit-btn {
+    display:flex;
+    background-color: hsl(26,97%,53%);
+    height: 46px;
+    width: auto;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.submit-btn:hover {
+    background-color: hsl(0,0%,100%);
+    color: hsl(26,97%,53%);
+}
+
+.text-white {
+    color:hsl(0,0%,100%);
+}
+.text-light-gray{
+    color:hsl(217,12%,63%);
+}
+.bg-medium-gray{
+    color:hsl(216,12%,54%);
+}
+
+.bg-orange {
+    background-color: hsl(26,97%,53%);
+}
+
+.bg-round-btn {
+    background-color: hsl(210, 32%, 22%);
+}
+
+.bg-dark-blue{
+    background-color: hsl(213,19%,18%);
+}
+
+.bg-very-dark-blue{
+    background-color: hsl(216,12%,8%);
+}
+
+.bg-extremely-dark-blue{
+    background-color: hsl(228,20%,10%);
+}
+
+.hidden {
+    display:none;
+}
+
+.centered {
+    display:block;
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rating-btn > .centered {
+    padding-top: 3px;
+    padding-left: 1px;
+}
+
+.star-img > .centered {
+    padding-left: 1px;
+}
+
+.submit-btn > .centered {
+    padding-top: 3px;
+}
+
+.text-center {
+    text-align: center;
+}
