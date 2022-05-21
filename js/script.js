@@ -8,11 +8,10 @@ let rating = 0;
 // Function definition 
 
 function selectRating(btn) {
-    let el = document.querySelector('.btn-selected');
+    const el = document.querySelector('.btn-selected');
     el?.classList.remove('btn-selected');
     btn.classList.add('btn-selected');
     rating = btn.id.charAt(btn.id.length - 1);
-    console.log(rating);
 }
 
 function submit() {
@@ -26,9 +25,9 @@ function submit() {
 // Executing code
 
 Array.from(document.getElementsByClassName('rating-btn')).forEach(btn => {
-    btn.addEventListener('click', ()=>{selectRating(btn)});
-});
+        btn.addEventListener('click', () => { selectRating(btn) });
+    });
 
-document.querySelector('.submit-btn').addEventListener('click', ()=>{
-    submit(); 
-})
+document.querySelector('.submit-btn').addEventListener('click', () => {
+        submit();
+    })
