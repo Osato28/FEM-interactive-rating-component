@@ -1,15 +1,11 @@
-let ratingScreen = document.getElementById('ratingScreenContainer');
-let thanksScreen = document.getElementById('thanksScreenContainer');
-let thanksSubtitle = document.getElementById('thanksSubtitle');
+// Var declaration
+
+const ratingScreen = document.getElementById('ratingScreenContainer');
+const thanksScreen = document.getElementById('thanksScreenContainer');
+const thanksSubtitle = document.getElementById('thanksSubtitle');
 let rating = 0;
 
-Array.from(document.getElementsByClassName('rating-btn')).forEach(btn => {
-    btn.addEventListener('click', ()=>{selectRating(btn)});
-});
-
-document.querySelector('.submit-btn').addEventListener('click', ()=>{
-    submit(); 
-})
+// Function definition 
 
 function selectRating(btn) {
     let el = document.querySelector('.btn-selected');
@@ -26,3 +22,13 @@ function submit() {
         thanksSubtitle.innerText = `You selected ${rating} out of 5`;
     }
 }
+
+// Executing code
+
+Array.from(document.getElementsByClassName('rating-btn')).forEach(btn => {
+    btn.addEventListener('click', ()=>{selectRating(btn)});
+});
+
+document.querySelector('.submit-btn').addEventListener('click', ()=>{
+    submit(); 
+})

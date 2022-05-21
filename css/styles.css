@@ -16,6 +16,8 @@ html {
     letter-spacing: .1em;
 }
 
+/* Wrappers */
+
 .rating-component {
     display:block;
     position: absolute;
@@ -23,7 +25,7 @@ html {
     left: 50%; 
     top: 50%;
     transform: translate(-50%, -50%);
-    min-width: 270px;
+    min-width: 320px;
     max-width: 415px;
     border-radius: 20px;
     /* padding: 35px; */
@@ -37,17 +39,19 @@ html {
     margin:45px 35px 50px 35px;
 }
 
-.text {
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 0.025em;
-    line-height: 24px;
-}
+/* text */
 
 .header {
     font-size: 27px;
     letter-spacing: 0.025em;
     font-weight: 400;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 24px;
 }
 
 .subtitle {
@@ -81,19 +85,12 @@ html {
     margin: 30px auto 40px auto;
 }
 
-.star-img {
-    display:flex;
-    height:50px;
-    width:50px;
-    border-radius: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
 .thanks-img {
     display:block;
     margin:auto;
 }
+
+/* Buttons and round BG for image */
 
 .rating-buttons {
     display:flex;
@@ -101,14 +98,14 @@ html {
     margin: 30px 0px 30px 0px;
 }
 
-.rating-btn {
+.rating-btn, .star-img {
     display:flex;
-    align-items: center;
-    justify-items: center;
     height:50px;
     width:50px;
     border-radius: 100%;
     font-size: 16px;
+    align-items: center;
+    justify-items: center;
 }
 
 .rating-btn.btn-selected {
@@ -119,55 +116,6 @@ html {
 .rating-btn:hover {
     background-color: hsl(26,97%,53%);
     color: hsl(0,0%,100%);
-}
-
-.submit-btn {
-    display:flex;
-    background-color: hsl(26,97%,53%);
-    height: 46px;
-    width: auto;
-    border-radius: 50px;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.submit-btn:hover {
-    background-color: hsl(0,0%,100%);
-    color: hsl(26,97%,53%);
-}
-
-.text-white {
-    color:hsl(0,0%,100%);
-}
-.text-light-gray{
-    color:hsl(217,12%,63%);
-}
-.bg-medium-gray{
-    color:hsl(216,12%,54%);
-}
-
-.bg-orange {
-    background-color: hsl(26,97%,53%);
-}
-
-.bg-round-btn {
-    background-color: hsl(210, 32%, 22%);
-}
-
-.bg-dark-blue{
-    background-color: hsl(213,19%,18%);
-}
-
-.bg-very-dark-blue{
-    background-color: hsl(216,12%,8%);
-}
-
-.bg-extremely-dark-blue{
-    background-color: hsl(228,20%,10%);
-}
-
-.hidden {
-    display:none;
 }
 
 .centered {
@@ -187,10 +135,94 @@ html {
     padding-left: 1px;
 }
 
+.submit-btn {
+    display:flex;
+    background-color: hsl(26,97%,53%);
+    height: 45px;
+    width: auto;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.submit-btn:hover {
+    background-color: hsl(0,0%,100%);
+    color: hsl(26,97%,53%);
+}
+
 .submit-btn > .centered {
     padding-top: 3px;
 }
 
+/* Colors */
+
+.text-white {
+    color:hsl(0,0%,100%);
+}
+.text-light-gray{
+    color:hsl(217,12%,63%);
+}
+.bg-medium-gray{
+    color:hsl(216,12%,54%);
+}
+.bg-orange {
+    background-color: hsl(26,97%,53%);
+}
+.bg-round-btn {
+    background-color: hsl(210, 32%, 22%);
+}
+.bg-dark-blue{
+    background-color: hsl(213,19%,18%);
+}
+.bg-very-dark-blue{
+    background-color: hsl(216,12%,8%);
+}
+.bg-extremely-dark-blue{
+    background-color: hsl(228,20%,10%);
+}
+
+/* Helpers */
+
+.hidden {
+    display:none;
+}
+
 .text-center {
     text-align: center;
+}
+
+/* 
+MOBILE
+*/
+
+@media (max-width: 799px) {
+    .rating-screen-container {
+        margin:25px 25px 30px 25px;
+    }
+
+    .header {
+        font-size: 23px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+
+    .rating-text {
+        margin-top: 24px;
+    }
+
+    .rating-buttons {
+        margin: 20px 0px 25px 0px;
+    }
+
+    .rating-btn, .star-img { 
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        font-size: 13px;
+    }
 }
