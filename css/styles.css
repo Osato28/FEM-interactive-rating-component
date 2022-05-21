@@ -225,4 +225,30 @@ MOBILE
     .submit-btn {
         font-size: 13px;
     }
+
+    /* Thanks screen */
+
+    .thanks-screen-container {
+        margin: 30px 25px 40px 25px;
+    }
+
+    .thanks-img {
+        height: 100px;
+    }
+
+    .subtitle-round-bg {
+        margin: 20px auto 25px auto;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .thanks-text {
+        margin-top: 25px;
+    }
+
+    .thanks-text > .text {
+        margin-top: 10px;
+    }
 }
