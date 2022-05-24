@@ -10,7 +10,9 @@ let rating = 0;
 function selectRating(btn) {
     const el = document.querySelector('.btn-selected');
     el?.classList.remove('btn-selected');
+    // el?.ariaPressed = "false";
     btn.classList.add('btn-selected');
+    btn.ariaPressed = "true";
     rating = btn.id.charAt(btn.id.length - 1);
 }
 
@@ -25,9 +27,22 @@ function submit() {
 // Executing code
 
 Array.from(document.getElementsByClassName('rating-btn')).forEach(btn => {
-        btn.addEventListener('click', () => { selectRating(btn) });
-    });
+    btn.addEventListener('click', () => { selectRating(btn) });
+    //For keyboard users
+    btn.addEventListener('focus', () => { selectRating(btn) });
+    btn.addEventListener('keydown', (ev) => {
+        if (ev.key == "Enter" || ev.key == "Space") {
+            document.querySelector('.submit-btn').focus();
+        }
+    }); 
+});
 
-document.querySelector('.submit-btn').addEventListener('click', () => {
+const submitButton = document.querySelector('.submit-btn');
+submitButton.addEventListener('click', () => {
+    submit();
+});
+submitButton.addEventListener('keydown', (ev) => {
+    if (ev.key == "Enter" || ev.key == "Space") {
         submit();
-    })
+    }
+});

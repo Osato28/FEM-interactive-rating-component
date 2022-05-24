@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- TODO: fix accessibility
+TODO: host on GitHub
+TODO: host on Timeweb -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,31 +19,31 @@
     <div class="rating-component bg-dark-blue text-white" id="component">
         <div class="rating-screen-container" id="ratingScreenContainer">
             <div class="star-img bg-round-btn">
-                <img class="centered" src="./assets/icon-star.svg" alt="">
+                <img class="centered" src="./assets/icon-star.svg" aria-hidden="true" alt="Rate us!">
             </div>
             <div class="rating-text">
                 <h1 class="header">How did we do?</h1>
                 <p class="text text-light-gray">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             </div>
             <div class="rating-buttons text-light-gray">
-                <div class="rating-btn bg-round-btn" id="rating1">
-                    <p class="centered">1</p>
+                <div class="rating-btn bg-round-btn" tabindex="0" id="rating1" role="button" aria-pressed="false">
+                    <p aria-label="One star out of five" class="centered">1</p>
                 </div>
-                <div class="rating-btn bg-round-btn" id="rating2">
-                    <p class="centered">2</p>
+                <div class="rating-btn bg-round-btn" tabindex="0" id="rating2" role="button" aria-pressed="false">
+                    <p aria-label="Two stars" class="centered">2</p>
                 </div>
-                <div class="rating-btn bg-round-btn" id="rating3">
-                    <p class="centered">3</p>
+                <div class="rating-btn bg-round-btn" tabindex="0" id="rating3" role="button" aria-pressed="false">
+                    <p aria-label="Three stars" class="centered">3</p>
                 </div>
-                <div class="rating-btn bg-round-btn" id="rating4">
-                    <p class="centered">4</p>
+                <div class="rating-btn bg-round-btn" tabindex="0" id="rating4" role="button" aria-pressed="false">
+                    <p aria-label="Four stars" class="centered">4</p>
                 </div>
-                <div class="rating-btn bg-round-btn" id="rating5">
-                    <p class="centered">5</p>
+                <div class="rating-btn bg-round-btn" tabindex="0" id="rating5" role="button" aria-pressed="false">
+                    <p aria-label="Five stars out of five" class="centered">5</p>
                 </div>
             </div>
-            <div class="submit-btn">
-                <p class="centered submit-btn-text">
+            <div aria-label="Submit rating" tabindex="0" class="submit-btn">
+                <p class="centered submit-btn-text" role="button">
                     SUBMIT
                 </p>
             </div>
@@ -49,7 +51,7 @@
 
         <div class="hidden thanks-screen-container" id="thanksScreenContainer">
             <div class="thanks-img-container">
-                <img src="assets/illustration-thank-you.svg" class="thanks-img" alt="">
+                <img src="assets/illustration-thank-you.svg" class="thanks-img" aria-hidden="true" alt="Thank you!">
                 <div class="subtitle text-center bg-round-btn subtitle-round-bg" id="thanksSubtitle">
                     You didn't vote
                 </div>
