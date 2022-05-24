@@ -27,7 +27,10 @@ function submit() {
 // Executing code
 
 Array.from(document.getElementsByClassName('rating-btn')).forEach(btn => {
-    btn.addEventListener('click', () => { selectRating(btn) });
+    btn.addEventListener('click', () => { 
+        selectRating(btn);
+        btn.blur();
+    });
     //For keyboard users
     btn.addEventListener('keydown', (ev) => {
         if (ev.key == "Enter" || ev.key == "Space") {
