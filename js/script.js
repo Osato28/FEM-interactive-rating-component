@@ -29,9 +29,9 @@ function submit() {
 Array.from(document.getElementsByClassName('rating-btn')).forEach(btn => {
     btn.addEventListener('click', () => { selectRating(btn) });
     //For keyboard users
-    btn.addEventListener('focus', () => { selectRating(btn) });
     btn.addEventListener('keydown', (ev) => {
         if (ev.key == "Enter" || ev.key == "Space") {
+            selectRating(btn);
             document.querySelector('.submit-btn').focus();
         }
     }); 

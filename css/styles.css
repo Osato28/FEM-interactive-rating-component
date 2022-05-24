@@ -126,7 +126,7 @@ html {
     color: hsl(0,0%,100%);
 }
 
-.rating-btn:hover {
+.rating-btn:hover, .rating-btn:focus {
     background-color: hsl(26,97%,53%);
     color: hsl(0,0%,100%);
 }
