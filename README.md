@@ -16,5 +16,3 @@ Adapted to support mouse-free navigation, screen reading
 ## Link to demo:
 
 [GitHub Pages](https://osato28.github.io/interactive-rating-component/)
-
-[Mirror](http://testing.cr80264.tmweb.ru/FEM_1_IRC/)
