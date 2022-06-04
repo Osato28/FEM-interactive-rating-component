@@ -15,4 +15,4 @@ Adapted to support mouse-free navigation, screen reading
 
 ## Link to demo:
 
-[GitHub Pages](https://osato28.github.io/interactive-rating-component/)
+[GitHub Pages](https://osato28.github.io/FEM-interactive-rating-component/)
